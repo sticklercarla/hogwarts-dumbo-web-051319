@@ -3,10 +3,6 @@ import React from 'react';
 
 class HogFront extends React.Component {
 
-  onPigClick = (event) => {
-    console.log(event.target)
-  }
-
   render(){
     console.log(this.props)
     return(

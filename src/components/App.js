@@ -5,13 +5,17 @@ import HogDisplay from './HogDisplay'
 import hogs from '../porkers_data';
 
 class App extends Component {
-  render(){
+
+  onButtonClick = () => {
     
+  }
+
+  render(){
+
     return (
       <div className="App">
           < Nav />
           < HogDisplay hogData={hogs}/>
-
       </div>
     )
   }
