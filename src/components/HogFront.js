@@ -4,9 +4,8 @@ import React from 'react';
 class HogFront extends React.Component {
 
   render(){
-    console.log(this.props)
     return(
-      <div className="ui eight wide column link instant move reveal">
+      <div className="ui eight wide column instant move reveal">
         <div  className="ui fluid raised link card visible content">
           <div className="image">
             <img src={this.props.image}/>

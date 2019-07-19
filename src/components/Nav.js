@@ -3,8 +3,8 @@ import React from 'react'
 
 class Nav extends React.Component {
 
-	clickedGreasyButton = (event) => {
-		debugger
+	clickedButton = (event) => {
+		this.props.onButtonClick(event)
 	}
 
 	render() {
@@ -18,9 +18,9 @@ class Nav extends React.Component {
 			</div>
 			<span className="normalText">A React App for County Fair Hog Fans</span>
 			<div>
-				<button onClick={this.clickedGreasyButton}>View Greasy Hogs</button>
-				<button onClick={this.clickedWeightButton}>Sort Hogs by Weight</button>
-				<button onClick={this.clickedNameButton}>Sort Hogs by Name</button>
+				<button id="greasy-hogs" onClick={this.clickedButton}>View Greasy Hogs</button>
+				<button id="weight-hogs" onClick={this.clickedButton}>Sort Hogs by Weight</button>
+				<button id="name-hogs" onClick={this.clickedButton}>Sort Hogs by Name</button>
 			</div>
 		</div>
 	)

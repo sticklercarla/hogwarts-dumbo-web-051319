@@ -4,9 +4,7 @@ import HogFront from "./HogFront.js"
 
 class HogDisplay extends Component{
   render(){
-    // debugger
     const hogs = this.props.hogData.map((hog, index) => {
-
       return (
         <HogFront
           key={index}
